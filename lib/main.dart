@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:simple_resume/experience.dart';
+import 'package:simple_resume/home.dart';
+import 'package:simple_resume/education.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,9 +34,9 @@ class _ResumeState extends State<Resume> {
   @override
   Widget build(BuildContext context) {
     final _listPage = <Widget>[
-      const Text('home'),
-      const Text('education'),
-      const Text('experience'),
+      home(),
+      education(),
+      experience(),
     ];
 
     final _bottomNavBarItems = <BottomNavigationBarItem>[
